@@ -1,7 +1,16 @@
 document.addEventListener('DOMContentLoaded', function () {
   const scrollToTopLink = document.querySelector('.navbar__name a');
+  const contactNameLink = document.querySelector('.contact__name a');
 
   scrollToTopLink.addEventListener('click', function (event) {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  });
+
+  contactNameLink.addEventListener('click', function (event) {
     event.preventDefault();
     window.scrollTo({
       top: 0,
